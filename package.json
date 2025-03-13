@@ -6,6 +6,7 @@
   "scripts": {
     "start": "rsbuild dev --open",
     "build": "rsbuild build",
+    "deploy": "pnpm build && import-meta-env -x .env.example -p dist/index.html",
     "check": "biome check --write",
     "format": "biome format --write",
     "preview": "rsbuild preview",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
+    "@import-meta-env/cli": "^0.7.3",
     "@rsbuild/core": "^1.2.16",
     "@rsbuild/plugin-react": "^1.1.1",
     "@rspress/plugin-preview": "^1.43.4",
