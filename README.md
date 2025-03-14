@@ -27,3 +27,12 @@ Preview the production build locally:
 ```bash
 pnpm preview
 ```
+
+## 相关文档
+
+- [Rsbuild](https://rsbuild.dev/zh/)
+- [React](https://zh-hans.react.dev/)
+- [es-toolkit](https://es-toolkit.slash.page/zh_hans/)
+- [Tanstack Query](https://tanstack.com/query/latest)
+- [Tanstack Router](https://tanstack.com/router/latest)
+- [Module Federation](https://module-federation.io/zh/)
