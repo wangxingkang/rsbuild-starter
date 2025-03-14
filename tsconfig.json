@@ -22,7 +22,8 @@
     "baseUrl": "./",
     "paths": {
       "@": ["src"],
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "*": ["./@mf-types/*"]
     },
   },
   "include": ["src", "docs"]

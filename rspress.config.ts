@@ -1,5 +1,4 @@
 import * as path from 'node:path';
-import { pluginModuleFederation } from '@module-federation/rsbuild-plugin';
 import { pluginPreview } from '@rspress/plugin-preview';
 import { defineConfig } from 'rspress/config';
 
@@ -18,14 +17,6 @@ export default defineConfig({
   },
   plugins: [
     pluginPreview({}),
-    // 模块联邦
-    pluginModuleFederation({
-      name: 'pansy_consumer',
-      remotes: {
-        // federation_provider: 'pansy_provider@http://localhost:3000/mf-manifest.json',
-      },
-      shared: ['react', 'react-dom'],
-    }),
   ],
   themeConfig: {
     enableContentAnimation: true,
