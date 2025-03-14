@@ -6,6 +6,7 @@
  */
 const envMap = {
   PUBLIC_API_BASE_URL: import.meta.env.PUBLIC_API_BASE_URL,
+  PUBLIC_PAGE_TITLE: import.meta.env.PUBLIC_PAGE_TITLE,
 };
 
 export function getEnvValue(key: keyof typeof envMap): string {

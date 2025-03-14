@@ -19,9 +19,11 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
 
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@": ["src"],
+      "@/*": ["src/*"]
+    },
   },
   "include": ["src", "docs"]
 }
