@@ -1,5 +1,5 @@
-import { createFileRoute } from '@tanstack/react-router';
 import { getEnvValue } from '@/utils/env';
+import { createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/')({
   component: RouteComponent,
@@ -9,5 +9,10 @@ export const Route = createFileRoute('/')({
 });
 
 function RouteComponent() {
-  return <div>首页 {getEnvValue('PUBLIC_API_BASE_URL')}</div>;
+  return (
+    <div>
+      首页
+      {getEnvValue('PUBLIC_API_BASE_URL')}
+    </div>
+  );
 }

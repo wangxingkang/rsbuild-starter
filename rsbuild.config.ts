@@ -18,7 +18,7 @@ export default defineConfig({
       },
       // 消费者配置
       remotes: {
-        // federation_provider: 'federation_provider@http://localhost:3000/mf-manifest.json',
+        // federation_provider: 'federation_provider@http://localhost:3005/mf-manifest.json',
       },
       shared: ['react', 'react-dom'],
     }),
